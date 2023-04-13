@@ -1,76 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Krona+One&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-* { /*Editando TODO O CSS*/
+*{
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
+    box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
-    height: 100vh;
 }
 
-.apresentacao {
-    margin: 10% 12%; /*Editando margem da página*/
-    display:flex;
-    flex-direction: row; /*Display flex direção de linha reta*/
+.cabecalho{
+    
+}
+
+.cabecalho_menu{
+    
+}
+
+.cabecalho_menu_link{
+
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.apresentacao{
+    padding: 3% 3%;
+    display: flex;
     align-items: center;
-    justify-content: space-between; /*Deixando o espaço igual entre os itens*/
-}
-
-.apresentacao__conteudo {
-    width: 500px; 
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /*Espaço entre as lacunas*/
-}
-
-.apresentacao__conteudo__titulo {
-    font-size: 40px;
-    font-family: 'Krona One', sans-serif;
-    font-weight: 600;
-}
-
-.apresentacao__conteudo__paragrafo {
-    font-size: 20px;
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-}
-
-.nome {
-    color: blue;
-}
-
-.apresentacao__links {
-    display: flex;
-    flex-direction: column; /*Mudando a direção do display flex para função coluna*/
-    align-items: center; /*Alinhando itens no centro*/
-    gap: 32px; /*Espaço entre as lacunas*/
     justify-content: space-between;
 }
-
-.apresentacao__links_subtitulo {
-    font-family: 'Krona One', sans-serif;
-    font-weight: 400; /*Peso da fonte*/
-    font-size: 20px;
-    align-items: center;
-    margin-left: -10%;
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.apresentacao__links__link {
-    border: 5px ridge blue; /*O primeiro valor se refere à espessura da borda*/
-    width: 380px; /*Mudando a largura do botão*/
-    text-align: center;
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
     font-family: 'Krona One', sans-serif;
-    color: white;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
     border-radius: 8px;
     font-size: 24px;
-    padding: 10 px 0; 
-    text-decoration: none; /*Tirar a decoração padrão dos links, tipo sublinhado e letra azul*/
-    font-weight: 600; /*Peso da fonte*/
-    margin-left: -10%;
-    
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    gap: 16px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: rgb(22, 22, 22);
+    color: #22D4FD;
+}
+
+.rodape {
+    background-color: #22D4FD;
+    color: #000000;
+    font-family: 'Krona One', sans-serif;
+    padding: 16px;
+    text-align: center;
+    font-weight: 400;
 }
