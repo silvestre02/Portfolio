@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Krona+One&family=Oswald&display=swap');
 
-* { 
+* { /*Editando TODO O CSS*/
     margin: 0;
     padding: 0;
 }
@@ -9,23 +9,22 @@
 body {
     background-color: #000000;
     color: #F6F6F6;
-    box-sizing: border-box;
     height: 100vh;
 }
 
 .apresentacao {
-    margin: 10% 12%;
+    margin: 10% 12%; /*Editando margem da página*/
     display:flex;
-    flex-direction: row;
+    flex-direction: row; /*Display flex direção de linha reta*/
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*Deixando o espaço igual entre os itens*/
 }
 
 .apresentacao__conteudo {
-    width: 500px;
+    width: 500px; 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /*Espaço entre as lacunas*/
 }
 
 .apresentacao__conteudo__titulo {
@@ -47,18 +46,31 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column; /*Mudando a direção do display flex para função coluna*/
+    align-items: center; /*Alinhando itens no centro*/
+    gap: 32px; /*Espaço entre as lacunas*/
     justify-content: space-between;
 }
 
+.apresentacao__links_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400; /*Peso da fonte*/
+    font-size: 20px;
+    align-items: center;
+    margin-left: -10%;
+}
+
 .apresentacao__links__link {
-    background-color: blue;
-    width: 200px;
+    border: 5px ridge blue; /*O primeiro valor se refere à espessura da borda*/
+    width: 380px; /*Mudando a largura do botão*/
     text-align: center;
     font-family: 'Krona One', sans-serif;
     color: white;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
-    padding: 10 px 0;
-    text-decoration: none;
-    font-weight: 600;
+    padding: 10 px 0; 
+    text-decoration: none; /*Tirar a decoração padrão dos links, tipo sublinhado e letra azul*/
+    font-weight: 600; /*Peso da fonte*/
+    margin-left: -10%;
+    
 }
